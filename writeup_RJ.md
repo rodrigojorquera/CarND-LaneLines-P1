@@ -23,16 +23,16 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. 
+My pipeline consisted of 8 steps. 
 
-Step 1: Convert the images to Grayscale.
-Step 2: Applied Gaussian Blur to the images.
-Step 3: Applied Canny edge detection.
-Step 4: Set a specific area (Masking) to process only that region of interest.
-Step 5: Ran the Hough transform to the lines.
-Step 6: Converted the lines into straight lines.
-Step 7: Smoothing the result with a moving average filter.
-Step 8: Plot the lines on top of the image.
+- Step 1: Convert the images to Grayscale.
+- Step 2: Applied Gaussian Blur to the images.
+- Step 3: Applied Canny edge detection.
+- Step 4: Set a specific area (Masking) to process only that region of interest.
+- Step 5: Ran the Hough transform to the lines.
+- Step 6: Converted the lines into straight lines.
+- Step 7: Smoothing the result with a moving average filter.
+- Step 8: Plot the lines on top of the image.
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by:
