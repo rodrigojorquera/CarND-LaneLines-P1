@@ -45,10 +45,10 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One shortcoming is that the region of interest is static, for this reason, it will work in just some specific cases.
-Another shortcoming is that using the average of the slope is very limited, for example, that will not work if the car is passing on a zone with a curve.
+- One shortcoming is that the region of interest is static, for this reason, it will work in just some specific cases.
+- Another shortcoming is that using the average of the slope is very limited, for example, that will not work if the car is passing on a zone with a curve.
 
 ### 3. Suggest possible improvements to your pipeline
 
-The first improvement should be define a dynamic region of interest.
-A second improvement should be recalculate the slope of the line and identify if that slope is changing very fast. If that is the case, a curve could be identified in that case.
+- The first improvement should be define a dynamic region of interest.
+- A second improvement should be recalculate the slope of the line and identify if that slope is changing very fast. If that is the case, a curve could be identified in that case.
