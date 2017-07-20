@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 8 steps. 
+My pipeline consisted of 6 steps. 
 
 - Step 1: Convert the images to Grayscale.
 - Step 2: Applied Gaussian Blur to the images.
@@ -45,13 +45,10 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... ...
-
-Another shortcoming could be ...
-
+One shortcoming is that the region of interest is static, for this reason, it will work in just some specific cases.
+Another shortcoming is that using the average of the slope is very limited, for example, that will not work if the car is passing on a zone with a curve.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+The first improvement should be define a dynamic region of interest.
+A second improvement should be recalculate the slope of the line and identify if that slope is changing very fast. If that is the case, a curve could be identified in that case.
