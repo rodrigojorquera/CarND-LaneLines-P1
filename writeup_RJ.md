@@ -30,17 +30,12 @@ My pipeline consisted of 6 steps.
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by:
 
 - Calculate the current slope
-- Checked if the value of the slope is negative or positive (right or left)
-- Stored the current value of the coordinates
-- Calculate the average of negative and positive slope
-- Using the slope and intercept, extend the lines
-- Update the moving average of the last few lines and the new lines
-- Plot the moving average lines
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
+- Checked if the value of the slope is negative or positive (right or left), and assign it to an arrray
+- Stored the current value of the slope to an array
+- Calculate the average of negative and positive slope, if the slope is 0, then set it to 1 avoiding nan values
+- Calculate the average of each point
+- Get the intercept value
+- Extrapolate the lines and then draw
 
 ### 2. Identify potential shortcomings with your current pipeline
 
